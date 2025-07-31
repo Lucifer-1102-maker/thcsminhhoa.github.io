@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trường THCS Minh Hòa</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+    }
+    .slide {
+      flex: none;
+      scroll-snap-align: start;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-700 text-white py-4 shadow">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">THCS Minh Hòa</h1>
+      <nav class="space-x-4">
+        <a href="#" class="hover:underline">Trang chủ</a>
+        <a href="#gioi-thieu" class="hover:underline">Giới thiệu</a>
+        <a href="#tin-tuc" class="hover:underline">Tin tức</a>
+        <a href="#thu-vien" class="hover:underline">Thư viện</a>
+        <a href="#thoi-khoa-bieu" class="hover:underline">Thời khóa biểu</a>
+        <a href="#thong-bao" class="hover:underline">Thông báo</a>
+        <a href="#lien-he" class="hover:underline">Liên hệ</a>
+        <a href="#admin" class="hover:underline">Quản trị</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-green-100 py-10">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Chào mừng đến với THCS Minh Hòa</h2>
+      <p class="text-lg">Nơi ươm mầm tri thức và xây dựng tương lai</p>
+    </div>
+  </section>
+
+  <!-- Các phần nội dung khác (giữ nguyên như bản trước) -->
+  <!-- ... -->
+
+  <!-- Quản trị nội dung -->
+  <section id="admin" class="py-10 bg-gray-200">
+    <div class="container mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-4">Đăng nhập quản trị nội dung</h3>
+      <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-md mx-auto">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+            Tên đăng nhập
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="admin">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+            Mật khẩu
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="••••••••">
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+            Đăng nhập
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white py-4 mt-10 text-center">
+    <p>&copy; 2025 Trường THCS Minh Hòa. All rights reserved.</p>
+  </footer>
+</body>
+</html>
